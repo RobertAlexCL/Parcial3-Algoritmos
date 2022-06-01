@@ -34,8 +34,6 @@ def wordBreak(word):
 # set to hold dictionary values
 dictionary = set()
 
-# array of strings to be added in dictionary set.
-temp_dictionary = [ "abcdefghijklmnopqrstuvwxyz","crecimiento","si","este", "programa","utiliza","el", "principio" ,"de", "dividir", "y", "vencer"]
 
 # 10 words
 small_dictionary = [
@@ -80,7 +78,7 @@ print("Yes" if wordBreak("el") else "No")
 #print("--- %s seconds ---" % (time.time_ns() - start_time))
 end = datetime.now()
 print("The time of execution of above program is :",
-      str(end-start)[5:])
+      str(end-start)[1:])
 
 
 start = datetime.now()
@@ -88,7 +86,7 @@ print("Para la plabra eldecidir:")
 print("Yes" if wordBreak("eldecidir") else "No")
 end = datetime.now()
 print("The time of execution of above program is :",
-      str(end-start)[5:])
+      str(end-start)[1:])
 
 
 start = datetime.now()
@@ -96,14 +94,16 @@ print("Para la palabra eldecidirsolitario:")
 print("Yes" if wordBreak("eldecidirsolitario") else "No")
 end = datetime.now()
 print("The time of execution of above program is :",
-      str(end-start)[5:])
+      str(end-start)[1:])
 
 
 
 start = datetime.now()
 print("Para la palabre eldecidirsolitariodormir: " )
 print("Yes" if wordBreak("eldecidirsolitariodormir") else "No")
-
+end = datetime.now()
+print("The time of execution of above program is :",
+      str(end-start)[1:])
 
 
 start = datetime.now()
@@ -111,11 +111,50 @@ print("Para la palabra eldecidirsolitariodormircomer:")
 print("Yes" if wordBreak("eldecidirsolitariodormircomer") else "No")
 end = datetime.now()
 print("The time of execution of above program is :",
-      str(end-start)[5:])
+      str(end-start)[1:])
+
+small_dictionary = [
+"solo","si","contrario","una","uno","comer","dormir","solitario","decidir","el"]
+
+##"solosicontrariounaunocomerdormirsolitariodecidirel"
+
+
+start = datetime.now()
+print("Para la palabra comerdormirsolitariodecidirel:")
+print("Yes" if wordBreak("comerdormirsolitariodecidirel") else "No")
+end = datetime.now()
+print("The time of execution of above program is :",
+      str(end-start)[1:])
 
 
 
-print("Para una palabra de 11 letras:")
-print("Yes" if wordBreak("crecimiento") else "No")
+start = datetime.now()
+print("Para la palabra :unocomerdormirsolitariodecidirel")
+print("Yes" if wordBreak("unocomerdormirsolitariodecidirel") else "No")
+end = datetime.now()
+print("The time of execution of above program is :",
+      str(end-start)[1:])
 
+
+start = datetime.now()
+print("Para la palabra unaunocomerdormirsolitariodecidirel:")
+print("Yes" if wordBreak("unaunocomerdormirsolitariodecidirel") else "No")
+end = datetime.now()
+print("The time of execution of above program is :",
+      str(end-start)[1:])
+
+
+start = datetime.now()
+print("Para la palabra contrariounaunocomerdormirsolitariodecidirel:")
+print("Yes" if wordBreak("contrariounaunocomerdormirsolitariodecidirel") else "No")
+end = datetime.now()
+print("The time of execution of above program is :",
+      str(end-start)[1:])
+
+start = datetime.now()
+print("Para la palabra unaunocomerdormirsolitariodecidirel:")
+print("Yes" if wordBreak("unaunocomerdormirsolitariodecidirel") else "No")
+end = datetime.now()
+print("The time of execution of above program is :",
+      str(end-start)[1:])
 
